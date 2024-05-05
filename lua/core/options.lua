@@ -1,4 +1,4 @@
-local vo = vim.opt 
+local vo = vim.opt
 
 vo.expandtab = true
 vo.tabstop = 2
