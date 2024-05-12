@@ -19,6 +19,18 @@ return {
 					required_width = 88, -- min width of window required to show this column
 				},
 				filesystem = {
+					filtered_items = {
+						visible = true,
+						show_hidden_count = true,
+						hide_dotfiles = false,
+						hide_gitignored = true,
+						hide_by_name = {
+							'.git',
+							'.DS_Store',
+							'thumbs.db',
+						},
+						never_show = {},
+					},
 					window = {
 						mappings = {
 							["<space>"] = {
