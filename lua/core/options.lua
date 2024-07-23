@@ -8,6 +8,5 @@ vo.shiftwidth = 2
 vo.nu = true
 vo.relativenumber = true
 
-vim.api.nvim_set_option("clipboard", "unnamed")
-
+vim.api.nvim_set_option_value("clipboard", "unnamed", {})
 vo.smartindent = true
