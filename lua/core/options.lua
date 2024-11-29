@@ -5,6 +5,8 @@ vo.tabstop = 2
 vo.softtabstop = 2
 vo.shiftwidth = 2
 
+vo.termguicolors = true
+
 vo.nu = true
 vo.relativenumber = true
 

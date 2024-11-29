@@ -6,11 +6,6 @@ return {
     { "neovim/nvim-lspconfig" }, -- Required
     {                            -- Optional
       "williamboman/mason.nvim",
-      --[[
-      build = function()
-			  pcall(vim.cmd, "MasonUpdate")
-			end,]]
-      --
     },
     { "williamboman/mason-lspconfig.nvim" }, -- Optional
 
@@ -69,7 +64,6 @@ return {
     require("mason").setup({})
     require("mason-lspconfig").setup({
       ensure_installed = {
-        "tsserver",
         "eslint",
         "rust_analyzer",
         "kotlin_language_server",

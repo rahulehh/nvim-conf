@@ -5,6 +5,7 @@ return {
     priority = 1000,
     config = function()
       require("catppuccin").setup({
+        transparent_background = true,
         flavour = "frappe",
         dim_inactive = {
           enabled = true,
@@ -16,7 +17,6 @@ return {
         },
         color_overrides = {
           all = {
-            base = "#1E1E1E",
             mantle = "#1E1E1E",
           }
         }
