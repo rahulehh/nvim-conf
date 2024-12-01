@@ -7,6 +7,8 @@ vo.shiftwidth = 2
 
 vo.termguicolors = true
 
+vo.mouse = "a"
+
 vo.nu = true
 vo.relativenumber = true
 

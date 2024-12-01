@@ -12,6 +12,11 @@ return {
           shade = "dark",
           percentage = 0.15,
         },
+        custom_highlights = function(colors)
+          return {
+            WinSeparator = { fg = colors.lavender }
+          }
+        end,
         intergations = {
           mason = false,
         },

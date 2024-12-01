@@ -27,6 +27,7 @@ return {
             never_show = {},
           },
           window = {
+            position = "right",
             mappings = {
               ["<space>"] = {
                 "toggle_node",
@@ -67,7 +68,8 @@ return {
           },
         },
       })
-      vim.keymap.set("n", "<leader>y", "<cmd>Neotree filesystem reveal right<CR>", { desc = "Open Neotree" })
+
+      vim.keymap.set("n", "<leader>y", "<cmd>Neotree focus<CR>", { desc = "Open/Focus Neotree" })
     end,
   },
 }
