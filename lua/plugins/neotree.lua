@@ -8,12 +8,24 @@ return {
       "MunifTanjim/nui.nvim",
     },
     config = function()
+      local components = require("neo-tree.sources.common.components")
+
       require("neo-tree").setup({
         close_if_last_window = false,
         popup_border_style = "rounded",
         enable_git_status = true,
         enable_diagnostics = true,
         filesystem = {
+          components = {
+            name = function(config, node, state)
+              local name = components.name(config, node, state)
+              if node:get_depth() == 1 then
+                ---@diagnostic disable-next-line: undefined-field
+                name.text = vim.fs.basename(vim.loop.cwd() or '')
+              end
+              return name
+            end,
+          },
           filtered_items = {
             visible = true,
             show_hidden_count = true,
