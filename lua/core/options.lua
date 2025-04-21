@@ -5,6 +5,8 @@ vo.tabstop = 2
 vo.softtabstop = 2
 vo.shiftwidth = 2
 
+vo.wrap = false
+
 vo.termguicolors = true
 
 vo.mouse = "a"
