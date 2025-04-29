@@ -13,7 +13,7 @@ vk.set("n", "<leader>rc", "<cmd>source<CR>", { desc = "source" })
 
 vk.set("n", "<leader>bn", "<cmd>bnext<CR>", { desc = "Next buffer" })
 vk.set("n", "<leader>bv", "<cmd>bprevious<CR>", { desc = "Previous buffer" })
-vk.set("n", "<leader>bx", "<cmd>bdelete<CR>", { desc = "Delete current buffer" })
+vk.set("n", "<leader>bb", "<cmd>bdelete<CR>", { desc = "Delete current buffer" })
 vk.set("n", "<leader>ba", "<cmd>%bdelete<CR>", { desc = "Delete all buffers" })
 
 vk.set("n", "<leader>cn", "<cmd>cnext<CR>", { desc = "Quickfix: Next item" })

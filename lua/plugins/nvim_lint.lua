@@ -17,6 +17,7 @@ return {
 				kotlin = { "ktlint" },
 				terraform = { "tflint" },
 				ruby = { "standardrb" },
+				python = { "flake8" },
 			}
 
 			local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
