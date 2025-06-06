@@ -8,6 +8,8 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				svelte = { "prettierd", "prettier" },
+				java = { "google-java-format" },
+				kotlin = { "ktlint" },
 				javascript = { "prettierd", "prettier" },
 				typescript = { "prettierd", "prettier" },
 				javascriptreact = { "prettierd", "prettier" },
@@ -34,7 +36,7 @@ return {
 			conform.format({
 				lsp_fallback = true,
 				async = false,
-				timeout_ms = 500,
+				timeout_ms = 10000,
 				stop_after_first = true,
 			})
 		end, { desc = "Format file or range (in visual mode)" })

@@ -58,7 +58,7 @@ return {
 			end, vim.tbl_deep_extend("force", opts, { desc = "LSP Signature Help" }))
 		end)
 
-		require("mason").setup({})
+		require("mason").setup({ "java-debug-adapter", "java-test" })
 		require("mason-lspconfig").setup({
 			ensure_installed = {
 				"eslint",

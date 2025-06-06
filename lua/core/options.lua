@@ -6,13 +6,14 @@ vo.softtabstop = 2
 vo.shiftwidth = 2
 
 vo.wrap = false
-
-vo.termguicolors = true
-
-vo.mouse = "a"
+vo.scrolloff = 10
+vo.sidescrolloff = 8
 
 vo.nu = true
 vo.relativenumber = true
+vo.signcolumn = "yes"
 
-vim.api.nvim_set_option_value("clipboard", "unnamed", {})
 vo.smartindent = true
+vo.termguicolors = true
+vo.mouse = "a"
+vo.clipboard = "unnamedplus"
